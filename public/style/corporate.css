@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+  font-family: 'Satisfy', cursive;
+  font-size: 17px;
+}
+
+body {
+  font-family: 'Satisfy', cursive;
+}
+
+.jumbotron {
+  background-image: white;
+  background-repeat: repeat-x;
+  background-size: cover;
+  height: 570px;
+}
+.ioverlay {
+  height: 500px;
+  z-index: 0;
+}
+.toverlay {
+  z-index: 5;
+  position: relative;
+  left: 80px;
+  margin-top: 120px;
+  background-color: #a282ff;
+  color: white;
+  height: 310px;
+}
+.line {
+  height: 2px;
+  background-color: #e485ad;
+  text-align: center;
+}
+.linetext {
+  position: relative;
+  top: -0.5em;
+  background-color: white;
+  padding: 15px;
+  font-size: 40px;
+}
+.view {
+  border: 2px solid palevioletred;
+  border-radius: 25px;
+  background-color: palevioletred;
+  color: white;
+  padding: 10px;
+  justify-self: center;
+  position: relative;
+  left: 46%;
+  align-self: center;
+}
+.jumbotron a {
+  border: 1px solid white;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}

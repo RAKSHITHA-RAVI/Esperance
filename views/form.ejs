@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Forms </title>
+    <link href="../style/form.css" rel="stylesheet" media="all">
+    <link href="../style/welcome.css" rel="stylesheet" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="image" style="padding-top: 50px; overflow: hidden;">
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title" style="color: black;">Booking Information</h2>
+                    <form method="POST">
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Name" name="name">
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="events">
+                                    <option disabled="disabled" selected="selected">Event</option>
+                                    <option>Wedding </option>
+                                    <option>Birthday</option>
+                                    <option>Social</option>
+                                    <option>Corporate</option>
+                                    <option>Other</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="date" class="form-control" id="date" name="date" placeholder="DATE">
+                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Email" name="email">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                        </div>
+                        <div class="p-t-10">
+                            <button class="btn btn--pill btn--green" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+</body>
+</html>

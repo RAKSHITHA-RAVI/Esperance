@@ -1,0 +1,106 @@
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #feadb9;
+  color: black;
+}
+.birthdays,
+.festivals {
+  background-color: rgba(254, 173, 185, 0.7);
+}
+.onebox {
+  padding: 10px;
+  padding-top: 30px;
+  color: black;
+  background-color: #cfffe5;
+  height: 300px;
+  width: 200px;
+  z-index: 0;
+  position: relative;
+  bottom: 30px;
+  transition: transform 400ms ease-out;
+}
+.onebox:hover{
+  transform: scale(1.2);
+}
+.carousel {
+  z-index: -10;
+  color: black;
+}
+.carousel img {
+  height: 600px;
+  z-index: -10;
+}
+.carousel-caption h2 {
+  display: inline-block;
+  transition: transform 0.2s;
+  animation-name: text;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes text {
+  0% {
+    font-size: 24px;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
+.small {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 120px;
+  top: 120px;
+  z-index: 10;
+  transition: transform 400ms ease-out;
+}
+.big {
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  left: 230px;
+  z-index: 5;
+  transition: transform 400ms ease-out;
+}
+.big:hover{
+  transform: scale(1.15);
+}
+.small:hover{
+  transform: scale(1.15);
+}
+.circle {
+  border-radius: 50%;
+  position: relative;
+  width: auto;
+  background-color: white;
+  height: 300px;
+}
+.readmore {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  display: inline;
+  float: right;
+  margin-right: 125px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .readmore2 {
+    margin-top: 10px;
+    margin-right: 110px;
+  }
+}
+
+.readmore:hover{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,139 @@
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../img/w5.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  height: 700px;
+}
+.overlay {
+  position: absolute;
+  top: 600px;
+  left: -270px;
+  color: #b85482; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+.quote {
+  background-color: #feadb9;
+}
+.illustrations {
+  overflow: hidden;
+}
+.illustrations a {
+  border: 2px solid#feadb9;
+  border-radius: 25px;
+  background-color: #feadb9;
+  color: white;
+  padding: 10px;
+  justify-self: center;
+  position: relative;
+  left: 46%;
+  top: -40px;
+  align-self: center;
+}
+.view :hover {
+  text-decoration: none;
+  color: #b85482;
+}
+.card-columns .one {
+  position: relative;
+  left: -45px;
+  width: 500px;
+  height: auto;
+}
+.card-columns .one img {
+  width: 500px;
+  height: 300px;
+}
+.card-columns .two {
+  position: relative;
+  left: 60px;
+  width: 250px;
+  height: auto;
+}
+.carousel {
+  overflow: hidden;
+}
+.card-columns .two img {
+  height: 500px;
+}
+.card-columns .three {
+  position: relative;
+  top: -250px;
+  left: 10px;
+  width: 500px;
+  height: auto;
+}
+.card-columns .three img {
+  width: 500px;
+  height: 300px;
+}
+.card-columns .four {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 30px;
+
+  height: auto;
+}
+.card-columns .four img {
+  height: 400px;
+}
+.line {
+  height: 2px;
+  background-color: #e485ad;
+  text-align: center;
+}
+.linetext {
+  position: relative;
+  top: -0.5em;
+  background-color: white;
+  padding: 15px;
+  font-size: 40px;
+}
+@media only screen and (max-width: 900px) {
+  .one,
+  .two,
+  .three,
+  .four {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 30px;
+  }
+}
+.card-deck .card {
+  border: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .card-columns .card {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .card-columns .card img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .card-columns {
+    padding-left: -58px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .three {
+    padding-left: -58px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .four {
+    padding-left: 18px;
+  }
+}

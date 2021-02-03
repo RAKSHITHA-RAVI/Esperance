@@ -48,7 +48,8 @@ router.post('/register', (req, res) => {
           password,
           password2
         });
-      } else {
+      } else
+      {
         const newUser = new User({
           name,
           email,
@@ -78,7 +79,7 @@ router.post('/register', (req, res) => {
 // Login
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', {
-    successRedirect: '/dashboard',
+    successRedirect: '/home',
     failureRedirect: '/users/login',
     failureFlash: true
   })(req, res, next);

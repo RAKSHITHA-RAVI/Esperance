@@ -1,0 +1,78 @@
+.jumbotron {
+  background-image: none;
+  background-repeat: repeat-x;
+  background-size: cover;
+  height: 600px;
+}
+.ioverlay {
+  margin-top: 40px;
+  padding: 20px;
+  height: 580px;
+  z-index: -1;
+}
+.toverlay {
+  z-index: 1;
+  position: relative;
+  right: 140px;
+  margin-top: 120px;
+  background-color: #ff3464;
+  color: white;
+  height: 380px;
+}
+.fests {
+  background-color:#ffd1dc;
+}
+.fests img {
+  height: 400px;
+  width: 300px;
+
+  transform: translate(30px, 80px);
+  background-color: black;
+  opacity: 0.99;
+}
+.fests :hover {
+  filter: brightness(80%);
+}
+.line {
+  height: 2px;
+  background-color: #e485ad;
+  text-align: center;
+}
+.linetext {
+  position: relative;
+  top: -0.5em;
+  background-color: white;
+  padding: 15px;
+  font-size: 40px;
+}
+.overlay {
+  color: white;
+  transform: translate(155px, -120px);
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
+.jumbotron a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 5px;
+  float: right;
+}
+.illustration a {
+  border: 2px solid palevioletred;
+  border-radius: 25px;
+  background-color: palevioletred;
+  color: white;
+  padding: 10px;
+  justify-self: center;
+  position: relative;
+  left: 46%;
+  align-self: center;
+}
+.logo {
+  padding-left: 50px;
+  padding-right: 30px;
+}

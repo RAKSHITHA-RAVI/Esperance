@@ -1,0 +1,35 @@
+<div class="modal fade" id="NewsletterSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-warning " role="document">
+    <div class="modal-content">
+       <!--Header-->
+      <div class="modal-header text-center bg-warning">
+        <h4 class="modal-title white-text w-100 font-weight-bold py-2" style="color:white">Subscribe</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <form>
+          <div class="md-form mb-5">
+            <i class="fa fa-user prefix grey-text">  
+              <label data-error="wrong" data-success="right" for="form1">Your username</label></i>
+            <input type="text" id="form1" class="form-control validate">
+          </div>
+  
+          <div class="md-form">
+            <i class="fa fa-envelope prefix grey-text"> 
+               <label data-error="wrong" data-success="right" for="form2">Your email</label></i>
+            <input type="email" id="form2" class="form-control validate">
+          </div>
+        </form>
+      </div>
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-outline-warning waves-effect">Send <i class="fa fa-paper-plane-o ml-1"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

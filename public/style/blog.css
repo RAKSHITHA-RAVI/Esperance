@@ -1,0 +1,39 @@
+.headerr {
+  background-color: palevioletred;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+}
+.headerr:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: url("../img/wave-bottom.svg");
+  height: 300px;
+}
+.header-content {
+  margin-top: 10px;
+  padding-top: 100px;
+}
+.info {
+  color: white;
+  font-size: 60px;
+}
+.info p {
+  font-size: 30px;
+}
+.info a {
+  position: relative;
+  top: -10px;
+  left: 50px;
+  text-decoration: none;
+  color: palevioletred;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.info a:hover {
+  background-color: none;
+}

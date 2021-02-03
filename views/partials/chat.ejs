@@ -1,0 +1,29 @@
+
+<div id="body"> 
+    <div id="chat-circle" class="btn btn-raised">
+          <div id="chat-overlay"></div>
+          <i class="fa fa-comments fa-3x" style="position: relative; top: -15px; left: -15px;"  onclick="openForm()" ></i>
+    </div>
+    <!--chat body-->
+          <div class="chat-box" id="chatform">
+            <div class="chat-box-header">
+              We are here to help you
+            <span class="chat-box-toggle"> 
+              <button type="button" class="close" onclick="closeForm();">&times;</button></span>
+            </div>
+            <div class="chat-box-body">
+              <div class="chat-box-overlay">   
+              </div>
+              <div class="chat-logs">
+              <p>How can we help you today?</p>
+              </div>
+            </div>
+    
+            <div class="chat-input">      
+              <form>
+              <input type="text" id="chat-input" placeholder="Send a message..."/>
+              <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">Send</i></button>
+              </form>      
+            </div>
+          </div>
+    </div>

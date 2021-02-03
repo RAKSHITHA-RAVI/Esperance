@@ -1,8 +1,10 @@
-const express= require('express');
-const expressLayouts=require('express-ejs-layouts');
-const mongoose =require('mongoose');
+const express= require('express'); //server
+const expressLayouts=require('express-ejs-layouts'); //template language
+const mongoose =require('mongoose'); //Mongo driver(manages relations bw data ,schema)
 const flash = require('connect-flash');
 const session =require('express-session');
+const path = require('path');
+
 const app= express();
 
 const passport=require('passport');
@@ -14,11 +16,11 @@ require('./config/passport')(passport);
 const db=require('./config/keys').MongoURI;
 
 // connect to Mongo 
-mongoose.connect(db,{useNewUrlParser: true })
+mongoose.connect(db,{useNewUrlParser: true,useUnifiedTopology: true })
 .then(()=>console.log('MongoDB connected'))
 .catch(err=>console.log(err));
 
-//EJS 
+//EJS templatin language
 app.use(expressLayouts);
 app.set('view engine','ejs'); 
 
@@ -34,7 +36,7 @@ app.use(
     })
   );
 
-  //Passport middleware
+//Passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
 //connect flash
@@ -48,10 +50,17 @@ app.use(function(req, res, next) {
     next();
   });
 
+//Static Files
+app.use(express.static('public'));
+app.use('/style',express.static(__dirname +'public/style'));
+app.use('/js',express.static(__dirname +'public/js'));
+app.use('/img',express.static(__dirname +'public/img'));
+
 
 //Routes
 app.use('/', require('./routes/index'));
-app.use('/users',require('./routes/users'));
-const PORT= process.env.PORT || 5000;
 
+app.use('/users',require('./routes/users'));
+
+const PORT= process.env.PORT || 5000;
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
